@@ -1,0 +1,95 @@
+.profile{
+    text-align: center;
+}
+.logo-img{
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.search-input{
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 50px;
+
+}
+
+.btn{
+display: flex;
+justify-content: center;
+}
+.button1,
+.button2{
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 30px;
+    background-color: ;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.follow_button{
+    padding-top:7px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 30px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #cfd9de;
+    color: #0f1419;
+    font-weight: bold;
+    
+}
+
+
+.card{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px;
+    background-color: lightgray;
+    width: 400px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box{
+    border: 1px solid #0f1419;
+    text-align: center;
+    padding: 10px;
+}
+
+.card2{
+    width: 400px;
+    border: 1px dotted blue;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    background-color: #ddebf8;
+    color: #2b2839;
+    border-bottom: 7px solid #d8cefe;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 5px;
+
+}
+.avater{
+    width: 150px;
+}
+
+
+
+

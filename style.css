@@ -89,7 +89,74 @@ justify-content: center;
 .avater{
     width: 150px;
 }
-
+.space{
+    background-image: url("univers.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 30px 40px 300px 30px;
+    border: none;
+    font-family: "Black Ops One", system-ui;
+    
+}
+.apply{
+    padding: 6px 12px;
+    background-color: #f1f0f5;
+    font-family: inherit;
+    border: none;
+}
+.ad{
+    margin: 50px;
+    padding: 10px 18px 25px 10px;
+    border: 5px solid #a3bc71;
+    text-align: center;
+    width: 300px;
+    background-color: #35654d;
+    color: whitesmoke;
+    font-family: Rammetto One,cursive;
+}
+.cta{
+    border: 2px solid #a3bc71;
+    padding: 2px 4px;
+    background: #8f4737;
+}
+#spn{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+#cube_walpaper{
+    height: 150px;
+}
+.galaxy{
+    background-image: url("galaxy.gif");
+    background-size: contain;   /* shows full GIF, no cropping */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    color: #90a9b7;
+    text-align: center;
+    padding: 30px;
+    font-family: "Black Ops One", system-ui;
+}
+.btn4{
+    padding: 6px 12px;
+    background: #90a9b7;
+    font-family: inherit;
+    border: none;
+}
+.text_shadow {
+    letter-spacing: 4px;
+    background: #b7111b;
+    color: #fafbf4;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;   
+}
+.NETWORK_X {              
+    font-size: 80px;
+    text-shadow: 5px -5px 5px black; /* Right Down Blur Color */
+}
 
 
 

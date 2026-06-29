@@ -157,6 +157,129 @@ justify-content: center;
     font-size: 80px;
     text-shadow: 5px -5px 5px black; /* Right Down Blur Color */
 }
+.text_shadow2 {
+    letter-spacing: 4px;
+    background: whitesmoke;
+    color: #fafbf4;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    
+}
+.NETWORK_Y {              
+    font-size: 80px;
+    text-shadow: 0px 0px 20px black; /* Right Down Blur Color */
+}
+.birhtaday_gift_site{
+    text-align: center;
+    font-family: "Happy Monkey", cursive;
+    background: #a2d2ff;
+    color: #000F08;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*column*/
+    padding: 5px 10px 30px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #a2d2ff, #f1faee, #a2d2ff); /* Gradient background */
+}
+.img_of_abdullah{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px #3E2F5B solid;
+}
+.h1,h2,h4{
+    text-shadow: 0px 0px 5px white;
+}
+.h2,h4{
+    background: #35654d;
+    padding: 3px;
+    
+}
+.h2{
+    margin-bottom: 0;
+}
+.gift_img{
+    background-image: url("giftcover.jpg");
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gift_img1:hover{
+    background-image: url("Excited Happy Birthday GIF.gif");
+} 
+#gift_img2:hover{
+    background-image: url("Happy Birthday GIF.gif");
+}
+#gift_img3:hover{
+    background-image: url("Good Boy GIF by Universal Pictures Home Entertainment.gif");
+}
+.gift_title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #3E2F5B;
+}
+.gift_text{
+    font-size: 20px;
+    color: #3E2F5B;
+    margin-bottom: 10px;
+    }
 
+.Home,
+.About,
+.Contact{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #e5383b;
+    font-size: 20px;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0px 0px 5px black;
+    
+}
+.nav1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.Home:hover,
+.About:hover,
+.Contact:hover{
+    background: #ba181b;
+    color: whitesmoke;
+    box-shadow: 0px 0px 10px black;
+}
+.hover_eye_link{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 50px;
+}
+.hover_eye{
+    width: 100%;
+    height: 250px;
+    background: #e5383b;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.hover_eye:hover{
+    background-image: url("eye.gif");
+    background-size: cover;      /* Better than contain */
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 

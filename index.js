@@ -305,6 +305,6 @@ function newCard() {
     }
 }
     
-console.log("My name is Abdullah Raihan Akash");
+
 
 

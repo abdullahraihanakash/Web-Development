@@ -305,6 +305,33 @@ function newCard() {
     }
 }
     
+        // Object and function
+let person = {
+    name: "Per",
+    age: 35,
+    country: "Norway"
+}
+function logData() {
+    console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
+}
+logData()
 
+        // Rock Paper Scissor
+let hands = ["rock","paper","scissor"]
+function getHand() {
+    let randomIndex = Math.floor(Math.random() * 3)
+    return hands[randomIndex]
+}
+console.log(getHand())
 
+        // Emoji Fighter
+let fighters = ["🐒","🦍","🦧","🐶","🐕","🦮","🐕‍🦺","🦁","🐈‍⬛",
+                "🐈","🐱","🦝","🦊","🐺","🐩","🐯"];
+let stageEl = document.getElementById("stage")
+let fightButton = document.getElementById("fightButton")
 
+fightButton.addEventListener("click",function(){
+    let randomIndex1 = Math.floor(Math.random() * fighters.length)
+    let randomIndex2 = Math.floor(Math.random() * fighters.length)
+    stageEl.textContent = fighters[randomIndex1] + "VS" + fighters[randomIndex2]
+})

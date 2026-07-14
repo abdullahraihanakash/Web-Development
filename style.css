@@ -772,3 +772,100 @@ to{
     background-color: #5715f0;
     transform:scale(1.1)
 }
+
+        /* Gradient */
+.gradient1,.gradient2,.gradient3,.gradient4,.gradient5,.gradient6,.gradient7,.gradient8,.gradient9,.gradient10,
+.gradient11,.gradient12,.gradient13,.gradient14,.gradient15,.gradient16,.gradient17,.gradient18,.gradient19,.gradient20 {
+    margin: 50px auto;
+    height: 800px;
+    width: 1000px;
+}
+.gradient1 {
+    
+    background: linear-gradient(red,yellow);
+}
+.gradient2 {
+
+    background: linear-gradient(to right,blue,green);
+}
+.gradient3 {
+    
+    background: conic-gradient(red,yellow,green,blue);
+}
+.gradient4 {
+        background: linear-gradient(to right, #ff512f, #dd2476);
+}
+.gradient5 {
+
+    background: linear-gradient(to bottom right, red, blue);
+}
+.gradient6 {
+    
+    background: linear-gradient(90deg,red,blue); /* 0 dge ↓, 90 dge →, 180 dge ↑, 270 dge ← */
+}
+.gradient7 {
+
+    background: linear-gradient(red,orange,yellow,green,blue);
+}
+.gradient8 {
+    background: linear-gradient(red 20%, yellow 50%, blue 100%); /* 0-20% = Red, 20-50% = Yellow, 50-100% = Blue */
+}
+.gradient9 {
+
+    background: linear-gradient(transparent,black); /* Transparent Gradient */
+}
+.gradient10 {
+
+    background: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1)); /* RGBA Gradient */
+}
+.gradient11 {
+
+    background: linear-gradient(#00c6ff, #0072ff); /* Hex Color */
+}
+.gradient12 {
+
+    background: linear-gradient(hsl(200,100%,50%), hsl(340,100%,60%)); /* HSL */
+}
+.gradient13 {
+
+    background: radial-gradient(red,blue); /* Circle */
+}
+.gradient14 {
+
+    background: radial-gradient(ellipse,red,blue); /* Ellipse */
+}
+.gradient15 {
+
+    background: repeating-linear-gradient(red 10%,yellow 20%); /* Repeating Gradient */
+}
+.gradient16 .gh1,.gp {
+
+            /* Gradint in text */
+
+    background: linear-gradient(red, blue);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+            /* Border Gradient */
+
+    border: 5px solid transparent; 
+    border-image: linear-gradient(red, blue) 1;
+
+     
+}
+.Gradient-button {
+    display: block;
+    margin: 50px auto;
+    padding: 20px;
+    background:linear-gradient(red,blue);
+    
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+

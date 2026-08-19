@@ -27,7 +27,6 @@ justify-content: center;
     margin-left: 4px;
     margin-right: 4px;
     margin-top: 30px;
-    background-color: ;
     border: none;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -89,7 +88,899 @@ justify-content: center;
 .avater{
     width: 150px;
 }
+.space{
+    background-image: url("univers.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 30px 40px 300px 30px;
+    border: none;
+    font-family: "Black Ops One", system-ui;
+    
+}
+.apply{
+    padding: 6px 12px;
+    background-color: #f1f0f5;
+    font-family: inherit;
+    border: none;
+}
+.ad{
+    margin: 50px;
+    padding: 10px 18px 25px 10px;
+    border: 5px solid #a3bc71;
+    text-align: center;
+    width: 300px;
+    background-color: #35654d;
+    color: whitesmoke;
+    font-family: Rammetto One,cursive;
+}
+.cta{
+    border: 2px solid #a3bc71;
+    padding: 2px 4px;
+    background: #8f4737;
+}
+#spn{
+    display: flex;
+    gap: 20px;
+    justify-content: center; /*Row*/
+}
+#cube_walpaper{
+    height: 150px;
+}
+.galaxy{
+    background-image: url("galaxy.gif");
+    background-size: contain;   /* shows full GIF, no cropping */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    color: #90a9b7;
+    text-align: center;
+    padding: 30px;
+    font-family: "Black Ops One", system-ui;
+}
+.btn4{
+    padding: 6px 12px;
+    background: #90a9b7;
+    font-family: inherit;
+    border: none;
+}
+.text_shadow {
+    letter-spacing: 4px;
+    background: #b7111b;
+    color: #fafbf4;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    
+}
+.NETWORK_X {              
+    font-size: 80px;
+    text-shadow: 5px -5px 5px black; /* Right Down Blur Color */
+}
+.text_shadow2 {
+    letter-spacing: 4px;
+    background: whitesmoke;
+    color: #fafbf4;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    
+}
+.NETWORK_Y {              
+    font-size: 80px;
+    text-shadow: 0px 0px 20px black; /* Right Down Blur Color */
+}
+.birhtaday_gift_site{
+    text-align: center;
+    font-family: "Happy Monkey", cursive;
+    background: #a2d2ff;
+    color: #000F08;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*column*/
+    padding: 5px 10px 30px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #a2d2ff, #f1faee, #a2d2ff); /* Gradient background */
+}
+.img_of_abdullah{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px #3E2F5B solid;
+}
+.h1,h2,h4{
+    text-shadow: 0px 0px 5px white;
+}
+.h2,h4{
+    background: #35654d;
+    padding: 3px;
+    
+}
+.h2{
+    margin-bottom: 0;
+}
+.gift_img{
+    background-image: url("giftcover.jpg");
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gift_img1:hover{
+    background-image: url("Excited Happy Birthday GIF.gif");
+} 
+#gift_img2:hover{
+    background-image: url("Happy Birthday GIF.gif");
+}
+#gift_img3:hover{
+    background-image: url("Good Boy GIF by Universal Pictures Home Entertainment.gif");
+}
+.gift_title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #3E2F5B;
+}
+.gift_text{
+    font-size: 20px;
+    color: #3E2F5B;
+    margin-bottom: 10px;
+    }
 
+.Home,
+.About,
+.Contact{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #e5383b;
+    font-size: 20px;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0px 0px 5px black;
+    
+}
+.nav1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.Home:hover,
+.About:hover,
+.Contact:hover{
+    background: #ba181b;
+    color: whitesmoke;
+    box-shadow: 0px 0px 10px black;
+}
+.hover_eye_link{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 50px;
+}
+.hover_eye{
+    width: 100%;
+    height: 250px;
+    background: #e5383b;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
 
+.hover_eye:hover{
+    background-image: url("eye.gif");
+    background-size: cover;      /* Better than contain */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+        /* Counter */ 
+#increment,#save{
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #8a2fd4;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#save-el{
+    font-size: 20px;
+    color: #8a2fd4;
+    margin-top: 20px;
+}
+#welcome-el{
+    font-size: 30px;
+    color: #8a2fd4;
+    margin-top: 20px;
+}
+        /*Reading an error message */
+.error{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8d7da;
+    padding: 20px;
+}
+#error_img{
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#purchase-btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    background: whitesmoke;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight:bold;
+}
+#purchase-btn:hover{ 
+    background: #9DC7C8;
+}
+#error{
+    color: red;
+}
+/*Calculator */
+.calculator{
+    background: #ffe5ec;
+    padding: 20px;
+    width: 800px;
+}
+#num1,#num2,#result{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 80px;
+    background: #ffc2d1;
+    overflow: auto;
+}
+#calculator_btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #fb6f92;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn5 {
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.btn5:hover {
+    background-color: #fb6f92;
+    color: whitesmoke;
+}
+.btn5:active {
+    transform: scale(0.95);
+}
+.btn6{
+    background: royalblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
 
+    transform:rotate(45deg);
+}
+.btn6:hover{
+    background: crimson;
+}
+.box1{
 
+    width:100px;
+    height:100px;
+
+    background:red;
+
+    transition:.5s;
+
+}
+.box1:hover{
+    width:200px;
+}
+.box2{
+    width:100px;
+    height:100px;
+
+    background:blue;
+
+    transition:.5s;
+}
+.box2:hover{
+    transform:translateY(-10px);
+}
+.box3{
+    width:100px;
+    height:100px;
+    background:green;
+    animation: box3 2s infinite alternate;
+}
+@keyframes box3{
+
+from{
+
+    transform:translateX(0);
+
+}
+
+to{
+
+    transform:translateX(300px);
+
+}
+}
+.box4{
+
+    width:100px;
+    height:100px;
+
+    background:red;
+    position: relative;
+    animation:move 3s infinite alternate;
+}
+
+@keyframes move{
+
+from{
+
+left:0;
+
+}
+
+to{
+
+left:300px;
+
+}
+
+}
+.btn7{
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #13e9de;
+    color: rgb(219, 16, 16);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+
+    transition:.3s;
+}
+.btn7:hover{
+
+    background:#77ddf7;
+
+    transform:scale(1.05);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+.loader{
+    margin: 20px auto;
+    width:50px;
+    height:50px;
+
+    border:5px solid lightgray;
+
+    border-top:5px solid blue;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+    /* --------------------
+   General Style
+---------------------*/
+.animation-container {
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background:#f5f5f5;
+    margin: 20px;
+    padding: 20px;
+}
+.section {
+    margin: 60px 0;
+}
+    /* --------------------
+   Hover Button
+---------------------*/
+.btn8 {
+    width:200px;
+    background:#4361ee;
+    color:white;
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+.btn8:hover{
+
+    background:#fb6f92;
+
+    transform:scale(1.1);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+
+}
+    /* --------------------
+   Bouncing Ball
+---------------------*/
+.ball{
+    width:80px;
+    height:80px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    background:crimson;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    animation:bounce 1s infinite alternate;
+}
+
+@keyframes bounce{
+
+from{
+
+    transform:translateY(0);
+
+}
+
+to{
+
+    transform:translateY(-150px);
+
+}
+
+}
+
+/* --------------------
+   Loading Spinner
+---------------------*/
+
+.loader{
+
+    width:70px;
+    height:70px;
+
+    margin:auto;
+
+    border:8px solid lightgray;
+
+    border-top:8px solid royalblue;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+from{
+
+    transform:rotate(0deg);
+
+}
+
+to{
+
+    transform:rotate(360deg);
+
+}
+
+}
+
+/* scoreboard */
+.score_bord {
+    background: #03045e;
+    padding: 20px;
+    margin: 50px 50px 20px 50px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: space-between; /* pushes home column left, guest column right */
+}
+.team {
+    display: flex;
+    flex-direction: column; /* stack title, score, buttons vertically */
+    align-items: center;
+    gap: 10px;
+}
+.team h1 {
+    margin: 0;
+    font-size: 20px;
+    color: whitesmoke;
+}
+#home_score, #guest_score {
+    background: black;
+    border-radius: 5px;
+    height: 100px;
+    min-width: 100px;
+    width:auto;
+    padding: 0 10px;     /* breathing room for long numbers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    overflow: auto;
+    white-space: nowrap;    /* prevent line wrapping */
+    font-family: "DSEG7 Classic", monospace;
+    color:#ff3366
+}
+#home_title, #guest_title {
+    font-size: 35px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home_btn, #guest_btn {
+    display: flex;
+    gap: 5px;
+}   
+#guest_btn button, #home_btn button {
+    padding: 7px 14px;
+    font-size: 20px;
+    background: none;
+    border: 2px solid red;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "DSEG7 Classic", monospace;
+    color:#ff3366
+}
+#reset-btn {
+    margin: 10px auto 10px 275px; 
+    width:125px;
+    background:#ee5764;
+    color:white;
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:25px;
+
+    transition:.3s;
+}
+#reset-btn:hover {
+    background:red;
+
+    transform:scale(1.1);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+/* Black Jack Game */
+.Black-Jack-Game {
+    margin: 20px auto;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    background: #6a994e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode','sans-serif';
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    box-shadow: 5px 5px 20px #fb8500; 
+}
+#message-el {
+    font-style: italic;
+}
+#start-game, #new-card {
+    background: #ffb703;
+    padding: 15px;
+    border: none;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    font-weight: bold;
+    font-size: 20px;
+    color: #e36414;
+    cursor:pointer;
+    width: 200px;
+
+}
+#start-game:hover,#new-card:hover {
+    background: #ffc300
+}
+#message-el, #cards-el, #sum-el, #start-game {
+    margin: 9px;
+}
+
+        /* Emoji Fighter */
+.emmogi_fighter {
+    background: #fff0f3;
+    height: 300px;
+    width: 400px;
+    padding:10px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 8px 20px #13e9de;
+    font-family: 'Permanent Marker', cursive;
+}
+.emoji {
+    color: #e98a1d;
+    text-shadow: 0px 3px 0px black;
+    line-height: 24px;
+    transform: rotate(-9deg);
+}
+#stage {
+    width: 100%;
+    height: 55px;
+    padding: 30px 0;
+    font-size: 50px;
+    margin: 0;
+}
+#fightButton {
+    margin: 20px;
+    cursor: pointer;
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: #e98a1d;
+    color: white;
+    font-family: inherit;
+    font-size: 20px;
+    transition: .3s;
+}
+#fightButton:hover {
+    background-color: #5715f0;
+    transform:scale(1.1)
+}
+
+        /* Gradient */
+.gradient1,.gradient2,.gradient3,.gradient4,.gradient5,.gradient6,.gradient7,.gradient8,.gradient9,.gradient10,
+.gradient11,.gradient12,.gradient13,.gradient14,.gradient15,.gradient16,.gradient17,.gradient18,.gradient19,.gradient20 {
+    margin: 50px auto;
+    height: 800px;
+    width: 1000px;
+}
+.gradient1 {
+    
+    background: linear-gradient(red,yellow);
+}
+.gradient2 {
+
+    background: linear-gradient(to right,blue,green);
+}
+.gradient3 {
+    
+    background: conic-gradient(red,yellow,green,blue);
+}
+.gradient4 {
+        background: linear-gradient(to right, #ff512f, #dd2476);
+}
+.gradient5 {
+
+    background: linear-gradient(to bottom right, red, blue);
+}
+.gradient6 {
+    
+    background: linear-gradient(90deg,red,blue); /* 0 dge ↓, 90 dge →, 180 dge ↑, 270 dge ← */
+}
+.gradient7 {
+
+    background: linear-gradient(red,orange,yellow,green,blue);
+}
+.gradient8 {
+    background: linear-gradient(red 20%, yellow 50%, blue 100%); /* 0-20% = Red, 20-50% = Yellow, 50-100% = Blue */
+}
+.gradient9 {
+
+    background: linear-gradient(transparent,black); /* Transparent Gradient */
+}
+.gradient10 {
+
+    background: linear-gradient(rgba(255,0,0,0), rgba(255,0,0,1)); /* RGBA Gradient */
+}
+.gradient11 {
+
+    background: linear-gradient(#00c6ff, #0072ff); /* Hex Color */
+}
+.gradient12 {
+
+    background: linear-gradient(hsl(200,100%,50%), hsl(340,100%,60%)); /* HSL */
+}
+.gradient13 {
+
+    background: radial-gradient(red,blue); /* Circle */
+}
+.gradient14 {
+
+    background: radial-gradient(ellipse,red,blue); /* Ellipse */
+}
+.gradient15 {
+
+    background: repeating-linear-gradient(red 10%,yellow 20%); /* Repeating Gradient */
+}
+.gradient16 .gh1,.gp {
+
+            /* Gradint in text */
+
+    background: linear-gradient(red, blue);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+            /* Border Gradient */
+
+    border: 5px solid transparent; 
+    border-image: linear-gradient(red, blue) 1;
+
+     
+}
+.Gradient-button {
+    display: block;
+    margin: 50px auto;
+    padding: 20px;
+    background:linear-gradient(red,blue);
+    
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+        /* Gradient Animation */
+.gradient17 {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+.box17 {
+    width:800px;
+    height:800px;
+
+    background:linear-gradient(
+        -45deg,
+        #ee7752,
+        #e73c7e,
+        #23a6d5,
+        #23d5ab
+    );
+
+    background-size:400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+25%{
+
+background-position:100% 50%;
+
+}
+
+50%{
+
+background-position:100% 100%;
+
+}
+
+75%{
+
+background-position:0% 100%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+.Gradient-button2 {
+    display: block;
+    margin: 50px auto;
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+
+    background:linear-gradient(
+    90deg,
+    #3f0fc4,
+    #ce6108);
+    transition:.5s;
+
+    background-size:200%;
+}
+.Gradient-button2:hover {
+    background-position:right;
+}
+.Gradient-button3 {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: white;
+    background: #4CAF50;
+    border-radius: 8px;
+}
+
+/* --------------------
+   Event Listener */
+
+.event_listener {
+    text-align: center;
+    margin-top: 50px;
+    background: #f0f0f0;
+    padding: 20px;
+}
+#event_btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#jane-btn {
+    color: silver;
+    background-color: #000F08;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}

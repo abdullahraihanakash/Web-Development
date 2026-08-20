@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 10px;   
+    min-width: 400px;
+}
+
+input {
+    width: 100%; /* Set the width to 100% of the parent container */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#input-btn,#tab-btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #5f9341; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#delete-btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;  
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;  
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    margin-top: 5px;
+}
+a  {
+    color: #5f9341;
+}

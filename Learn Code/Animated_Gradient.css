@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    gap:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        45deg,
+        #ff6b6b,
+        #feca57,
+        #48dbfb,
+        black
+    );
+
+    background-size:300% 300%;
+
+    animation:gradient 8s ease infinite;
+}
+
+@keyframes gradient{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* Modern Button 1 */
+.btn1{
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(90deg,#6a11cb,#2575fc);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+.btn1:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(37,117,252,.5);
+}
+
+/* Modern Button 2 */
+.btn2{
+
+    background:#00eaff;
+
+    color:black;
+
+    border:none;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    font-size:18px;
+
+}
+
+.btn2:hover{
+    box-shadow:
+        0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan,
+        0 0 80px cyan;
+}
+
+/* Modern Button 3 */
+.btn3{
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    color:white;
+
+    padding:15px 40px;
+
+    border-radius:15px;
+
+    transition:.4s;
+
+    font-size:18px;
+}
+.btn3:hover{
+    background:rgba(255,255,255,.3);
+}
+
+/* Modern Button 4 */
+.btn4{
+
+    background:#ff5722;
+
+    color:white;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    box-shadow:0 8px #d84315;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    font-size: 18px;
+}
+
+.btn4:active{       /* Pressed Effect :active তখন কাজ করে যখন Button-এ Mouse Click করে ধরে রাখা হয়। এতে Button চাপা (Pressed) মনে হয়। */
+    transform:translateY(8px);
+    box-shadow:0 0 #d84315;
+}
+
+/* Modern Button 5 */
+.btn5{
+    background:transparent;
+
+    color:white;
+
+    padding:15px 40px;
+
+    border:2px solid cyan;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    font-size: 18px;
+}
+.btn5:hover{
+    background:cyan;
+    color:black;
+}
+/* Modern Button 6 */
+.btn6{
+    background:linear-gradient(90deg,#ff6b6b,#feca57,#48dbfb);
+
+    color:white;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    box-shadow:0 8px #d84315;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    font-size: 18px;
+
+    overflow: hidden; /* Hide the overflow to prevent the gradient from spilling out of the button */
+}
+.btn6:hover{
+    transform:translateY(-5px);
+    box-shadow:
+        0 10px 25px rgba(37,117,252,.5);
+}

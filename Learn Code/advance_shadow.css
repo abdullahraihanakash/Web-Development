@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   Center Card
+=========================== */
+
+body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#edf1f7;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+/* ===========================
+   Card Design
+=========================== */
+
+.card{
+
+    width:350px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    /* Smooth Animation */
+
+    transition:
+    transform .4s,
+    box-shadow .4s;
+
+    /* -------------------------
+       Layer 1
+       Small Shadow
+    ------------------------- */
+
+    box-shadow:
+
+    0 4px 8px rgba(0,0,0,.05),
+
+    /* -------------------------
+       Layer 2
+       Medium Shadow
+    ------------------------- */
+
+    0 12px 25px rgba(0,0,0,.08),
+
+    /* -------------------------
+       Layer 3
+       Large Shadow
+    ------------------------- */
+
+    0 25px 45px rgba(0,0,0,.10);
+
+}
+
+
+/* ===========================
+   Hover Effect
+=========================== */
+
+.card:hover{
+
+    /* Lift Card */
+
+    transform:translateY(-12px);
+
+    /* Bigger Shadow */
+
+    box-shadow:
+
+    0 8px 16px rgba(0,0,0,.08),
+
+    0 18px 35px rgba(0,0,0,.12),
+
+    0 40px 80px rgba(0,0,0,.18);
+
+}
+
+
+/* ===========================
+   Image
+=========================== */
+
+.card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+/* ===========================
+   Content
+=========================== */
+
+.content{
+
+    padding:25px;
+
+}
+
+.content h2{
+
+    margin-bottom:15px;
+
+}
+
+.content p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+/* ===========================
+   Button
+=========================== */
+
+button{
+
+    margin-top:20px;
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#4f46e5;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#312e81;
+
+}

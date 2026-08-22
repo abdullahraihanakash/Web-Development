@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#121212;
+
+    font-family:Arial;
+}
+
+/*
+Perspective
+যত বেশি হবে
+তত কম distortion হবে
+*/
+
+.container{
+
+    perspective:1000px;
+
+}
+.card{
+
+    width:320px;
+
+    background:#1f1f1f;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    color:white;
+
+    text-align:center;
+
+    transition:.5s;
+
+    transform-style:preserve-3d;
+}
+
+/*
+Hover করলে card rotate হবে
+*/
+
+.card:hover{
+
+    transform:
+
+        rotateX(12deg)
+
+        rotateY(-15deg);
+
+}
+.card img{
+    width:120px;
+
+    border-radius:50%;
+
+    margin-bottom:20px;
+
+    transform:translateZ(50px);
+}
+
+/*
+Heading
+*/
+
+.card h2{
+
+    margin-bottom:10px;
+
+    transform:translateZ(40px);
+
+}
+
+/*
+Paragraph
+*/
+
+.card p{
+
+    color:#ccc;
+
+    margin-bottom:20px;
+
+    transform:translateZ(30px);
+
+}
+
+/*
+Button
+*/
+
+button{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    background:#00d4ff;
+
+    color:black;
+
+    font-weight:bold;
+
+    transform:translateZ(60px);
+}

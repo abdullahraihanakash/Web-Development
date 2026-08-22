@@ -1,0 +1,67 @@
+/* Remove default spacing */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Center the card */
+body{
+    
+    height:100vh;
+
+    background:
+        url("https://picsum.photos/1200/800")
+        center/cover no-repeat;
+}
+
+/* Glass card */
+.card{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    
+    width:350px;
+    padding:40px;
+
+    /* Semi-transparent background */
+    background:rgba(255,255,255,0.15);
+
+    /* Frosted glass effect */
+    -webkit-backdrop-filter:blur(15px);
+    backdrop-filter:blur(15px);
+
+    /* White border improves glass appearance */
+    border:1px solid rgba(255,255,255,0.25);
+
+    /* Rounded corners */
+    border-radius:20px;
+
+    /* Soft shadow */
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.2);
+
+    color:white;
+    text-align:center;
+}
+
+/* Glass navigation bar */
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+
+    background:rgba(255,255,255,.1);
+
+    -webkit-backdrop-filter:blur(18px);
+    backdrop-filter:blur(18px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.2);
+
+    color:white;
+}

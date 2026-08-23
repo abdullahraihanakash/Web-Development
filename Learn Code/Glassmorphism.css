@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+}
+.card{
+    width:320px;
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.15); /* Less Opacity more transparency */
+
+    backdrop-filter: blur(15px); /* Blur effect back to card */
+
+    border:1px solid rgba(255,255,255,.3);
+
+    box-shadow:0 8px 32px rgba(0,0,0,.2);
+
+    color:white;
+    transition:.4s;
+}
+.card:hover{
+transform:translateY(-10px);
+box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
+.back-button{
+text-decoration:none;
+padding:12px 25px;
+
+background:rgba(255,255,255,.2);
+
+border:1px solid rgba(255,255,255,.3);
+
+backdrop-filter:blur(10px);
+
+color:white;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+.back-button:hover{
+background:rgba(255,255,255,.35);
+}
+/* Navbar */
+.navbar{
+    width:90%;
+    max-width:1200px;
+
+    margin:20px auto;
+
+    padding:18px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 8px 30px rgba(0,0,0,.2);
+}
+/* Logo */
+.logo{
+    color:white;
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+/* Navigation */
+.nav-links{
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+}
+.nav-links a{
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.35s;
+}
+
+/* hero section */
+.hero{
+    color:white;
+}   
+
+

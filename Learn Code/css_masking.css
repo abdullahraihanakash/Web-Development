@@ -1,0 +1,81 @@
+/* Remove default spacing */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Center the card on the screen */
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+
+    background:#13f1e6;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* Image Card */
+.card{
+
+    width:400px;                     /* Card width */
+    height:400px;                    /* Card height */
+
+    border-radius:20px;              /* Rounded corners */
+
+    overflow:hidden;                 /* Hide outside area */
+
+    cursor:pointer;                  /* Pointer on hover */
+
+    transition:0.6s ease;            /* Smooth animation */
+
+    background-image:url("350.jpg");  /* Image to show */
+
+    background-size:cover;           /* Cover whole card */
+
+    background-position:center;      /* Center image */
+
+    /* Safari & Chrome mask */
+    -webkit-mask-image:
+    linear-gradient(
+        to bottom,
+        black 85%,                   /* Fully visible */
+        rgba(0,0,0,.65) 80%,         /* Slight fade */
+        transparent 100%             /* Bottom disappears */
+    );
+
+    /* Standard mask */
+    mask-image:
+    linear-gradient(
+        to bottom,
+        black 65%,                   /* Fully visible */
+        rgba(0,0,0,.85) 80%,         /* Slight fade */
+        transparent 100%             /* Bottom disappears */
+    );
+
+}
+
+/* Hover Effect */
+.card:hover{
+
+    transform:scale(1.05);           /* Slight zoom */
+    /* Remove Safari mask */
+    -webkit-mask-image:
+    linear-gradient(
+        black,
+        black
+    );
+
+    /* Remove standard mask */
+    mask-image:
+    linear-gradient(
+        black,
+        black
+    );
+
+}

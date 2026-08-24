@@ -1,0 +1,229 @@
+/* Remove default margin and padding */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Center the card on the page */
+body{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%)
+}
+.cards{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:50vh;
+
+    background:#f2f2f2;
+
+    gap:20px;
+}
+
+/* Card container */
+.card1{
+
+    width:350px;
+    height:250px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+    /* Hides the enlarged part of the image */
+
+    cursor:pointer;
+}
+
+/* Image style */
+.card1 img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    /* Makes the image fill the container */
+
+    transition:0.5s;
+    /* Smooth animation */
+}
+
+/* Runs when mouse hovers over the card */
+.card1:hover img{
+
+    transform:scale(1.2);
+    /* Zoom image to 120% */
+}
+
+
+/* Card container */
+.card2{
+
+    position:relative;
+
+    width:350px;
+    height:250px;
+
+    overflow:hidden;
+    border-radius:15px;
+}
+
+/* Image */
+.card2 img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+/* Overlay layer */
+.overlay{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.5);
+    /* Semi-transparent black */
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    opacity:0;
+    /* Hidden initially */
+
+    transition:.5s;
+}
+
+/* Hover effect */
+.card2:hover img{
+
+    transform:scale(1.1);
+}
+
+/* Show overlay */
+.card2:hover .overlay{
+
+    opacity:1;
+}
+
+.title{
+
+    color: royalblue;
+    /* Changes the text color */
+
+}
+
+.shadow-text{
+
+    font-size:60px;
+
+    color:white;
+
+    text-shadow:
+        3px 3px 8px rgba(0,0,0,.4);
+    /*
+        3px = horizontal shadow
+        3px = vertical shadow
+        8px = blur
+        rgba() = shadow color
+    */
+}
+
+.gradient-text{
+
+    font-size:60px;
+
+    background:linear-gradient(
+        90deg,
+        #a32424,
+        #f5b835,
+        #48dbfb
+    );
+
+    /* Shows the background only inside the text */
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    /* Makes the text transparent so the gradient appears */
+    color:transparent;
+}
+
+.outline-text{
+
+    font-size:70px;
+
+    color:transparent;
+
+    -webkit-text-stroke:2px #222;
+    /*
+        2px = outline thickness
+        #222 = outline color
+    */
+}
+
+.glow-text{
+    font-size:70px;
+    color:#00ffff;
+
+    text-shadow:
+        0 0 5px #2c0575,
+        0 0 10px #16f5f5,
+        0 0 20px #3c0f8f,
+        0 0 40px #131a1a;
+}
+
+.hover-text{
+    font-size:70px;
+    transition:.4s;
+    /* Smooth animation */
+
+}
+
+/* Runs when the mouse hovers over the text */
+.hover-text:hover{
+
+    color:crimson;
+
+    letter-spacing:5px;
+    /* Adds space between letters */
+}
+
+.letter-spacing{
+    font-size:70px;
+
+    letter-spacing:30px;
+    /* Adds space between letters */
+}
+
+.word-spacing{
+    font-size:70px;
+
+    word-spacing:50px;
+    /* Adds space between words */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

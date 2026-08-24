@@ -1,0 +1,29 @@
+body{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    gap:30px;
+}
+
+.box{
+    width:220px;
+    height:120px;
+
+    background:#00c3ff;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:15px;
+    font-size:25px;
+
+    /* Glow Effect */
+    box-shadow:
+        0 0 10px #00c3ff,
+        0 0 20px #00c3ff,
+        0 0 40px #00c3ff;
+}

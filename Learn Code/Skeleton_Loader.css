@@ -1,0 +1,115 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Center Card */
+body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#f2f2f2;
+
+    font-family:Arial;
+
+}
+
+/* Card */
+.card{
+
+    width:320px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* Circle Placeholder */
+.avatar{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    margin-bottom:20px;
+
+}
+
+/* Text Placeholder */
+.line{
+
+    height:15px;
+
+    margin-bottom:15px;
+
+    border-radius:10px;
+
+}
+
+/* Different Width */
+.long{
+
+    width:100%;
+
+}
+
+.medium{
+
+    width:80%;
+
+}
+
+.short{
+
+    width:50%;
+
+}
+
+/* Skeleton Effect */
+.skeleton{
+
+    background:
+    linear-gradient(
+        90deg,
+        #e5e5e5 25%,
+        #f7f7f7 50%,
+        #e5e5e5 75%
+    );
+
+    background-size:200% 100%;
+
+    animation:loading 1.2s infinite;
+
+}
+
+/* Animation */
+@keyframes loading{
+
+    from{
+
+        background-position:200% 0;
+
+    }
+
+    to{
+
+        background-position:-200% 0;
+
+    }
+
+}

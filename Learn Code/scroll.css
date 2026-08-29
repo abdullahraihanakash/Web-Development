@@ -1,0 +1,55 @@
+/* Remove default spacing */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Smooth page scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+/* Hero section */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Card */
+.card{
+    width:70%;
+    margin:120px auto;
+    padding:40px;
+    background:#222;
+    border-radius:16px;
+
+    /* Smooth animation */
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+/* Hidden state before entering viewport */
+.hidden{
+      opacity:0;
+    transform:translateY(80px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+/* Visible state */
+.show{
+    opacity:1;
+    transform:translateY(0);
+}

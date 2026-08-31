@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stockTicker.css">
+    <script type="module" src="stockTicker.js" defer></script>
+</head>
+<body>
+    <div class="tape" aria-hidden="true">
+    <div class="tape-track">
+      <span>CLAI</span><span>·</span><span>NDAQ</span><span>·</span><span>MRKT</span><span>·</span>
+      <span>CLAI</span><span>·</span><span>NDAQ</span><span>·</span><span>MRKT</span><span>·</span>
+      <span>CLAI</span><span>·</span><span>NDAQ</span><span>·</span><span>MRKT</span><span>·</span>
+      <span>CLAI</span><span>·</span><span>NDAQ</span><span>·</span><span>MRKT</span><span>·</span>
+    </div>
+  </div>
+ 
+  <main class="board">
+    <section class="ticker-card">
+      <header class="ticker-head">
+        <div class="ticker-id">
+          <h1 id="name" class="ticker-name">—</h1>
+          <span id="symbol" class="ticker-symbol">—</span>
+        </div>
+        <span class="live-dot" title="Live"></span>
+      </header>
+ 
+      <div class="ticker-price-row">
+        <span id="price" class="ticker-price">$0.00</span>
+        <span id="price-icon" class="ticker-icon"></span>
+      </div>
+ 
+      <footer class="ticker-foot">
+        <span class="foot-label">Last updated</span>
+        <span id="time" class="foot-time">—</span>
+      </footer>
+    </section>
+  </main>
+ 
+</body>
+</html>

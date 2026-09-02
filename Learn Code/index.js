@@ -437,6 +437,224 @@ const sentence = generateSentence("highest moutains",[" Mount Everest","K2"])
 console.log(sentence)
 */
 
+//Render images
+const imgs = [
+    "ri3.jpg",
+    "ri2.jpg",
+    "ri1.jpg"
+]
+
+const RenderImageContainer = document.getElementById("Render-image-container")
+
+function renderImages() {
+    for(let i=0;i<imgs.length;i++) {
+        RenderImageContainer.innerHTML += `<img class="team-img" src="${imgs[i]}">`
+    }
+}
+renderImages()
+
+
+//Rounding number
+
+const totalPrice = 420.40958785
+const btn = document.getElementById("purchase-bt")
+btn.textContent = `Buy $${Number(totalPrice).toFixed(2)}`
+
+// Ternary operator
+const exerciseTimeMins = 45
+//const message = exerciseTimeMins < 30 ? "You need to try harder!" : "Doing good!"
+const message = exerciseTimeMins < 30 ? 'You need to try herder!' : exerciseTimeMins < 60 ? 'Doing good' : 'Excellent!'
+console.log(message)
+
+const playerGuss = 7
+const correctAnswer = 6
+//const message = playerGuss === correctAnswer ? 'Correct!' : 'Wrong!'
+const message = playerGuss < correctAnswer ? 'Too low!' : playerGuss > correctAnswer ? 'Too high' : 'Exactly right!'
+console.log(message)
+
+// Switch statements
+function selectItem(item) {
+    let price = 0
+    
+    switch(item) {
+        case 'coffee':
+             price = 2
+        break
+        case 'sandwiches':
+            price = 5
+        break
+        case 'salad':
+            price = 4
+        break
+        default:
+            return `Sorry! We don't sell ${item}`  
+    }
+    return `You selected ${item}. That will be $${price}`
+}
+console.log(selectItem('salad'))
+
+// Object Destructuring : Object destructuring enables us to exeract properties from objects into distinct variables.
+const favouriteFilm = {
+    title: "Top Gun",
+    year: "1986",
+    genre: "action",
+    star: "Tom Cruise",
+    director: "Tony Scott"
+}
+
+const {title,year,genre,star,director} = favouriteFilm
+
+
+//const title = favouriteFilm.title
+//const year = favouriteFilm.year
+//const genre = favouriteFilm.genre
+//const star = favouriteFilm.star
+//const director = favouriteFilm.director
+
+console.log(`My favourite flim is ${title} starring ${star}. It's an ${genre} film that was directed by ${director} and released in ${year}`)
+
+
+// setTimeout with params
+function displayTrafficLight(light) {
+    console.log(light)
+}
+setTimeout(function() {
+    displayTrafficLight("Green light")}
+    ,3000)
+displayTrafficLight("Red light")
+
+function logAnswer(answer,points) {
+    console.log(`The answer is ${answer} of course! If you got that right, giver yourself ${points} points.`)    
+}
+console.log('What is the capital of peru?')
+const questionTimer = setTimeout(logAnswer,3000,'Lima',10)
+
+ document.getElementById('stop').addEventListener('click',function() {
+    clearTimeout(questionTimer)
+    console.log('Cancelling....')
+ })
+
+
+// The event loop
+// JavaScript is a single-threaded,non-blocking language. JavaScript gets a helping hand: WebAPI,Task Queue,Event Loop. These are not part of javascript.
+// What are WebAPIs? Ans: WebAPIs is provided by the browser, not part of javascript, have functionality for DOM manipulation, Data requests, Timers(setTimeout,setInterval) and more
+
+// Import Export: named
+import {interplanetaryDestinationsArr} from './data.js' // import information from data.js file
+//console.log(interplanetaryDestinationsArr)
+
+// Import Export : default
+import getMatchingTripsArr from './searchFunction.js'
+console.log(getMatchingTripsArr(interplanetaryDestinationsArr,'exotic'))
+
+// Constructors : Two types of constructor 1.Inbuilt, 2.Custom. 1.Inbuilt: Provide objects in various predetermind formats,like Date objects and Error objects,and Objects for each data type.
+// 2.Constructors we design ourselves to produce objects for our own specific purpouses.
+const dateSnapshot = new Date()
+console.log(dateSnapshot)
+console.log(typeof(dateSnapshot))
+console.log(dateSnapshot.toString())
+
+// The Error() Constructor
+function checkUsername(userName) {
+    if (userName) {
+        console.log(userName)
+    }
+    else {
+        throw new Error('No username provided')
+    }
+}
+checkUsername()
+
+// Numeric Separators & Bigint
+let num1 = 2_342_587_345_894
+let num2 = 2_342_587_345_894n
+let num3 = BigInt(2_342_587_345_894)
+console.log(num1)
+console.log(typeof(num1)) 
+console.log(typeof(num2))
+console.log(typeof(num3))
+
+// Hoisting: Hoisting variable and function declarations are moved to the top of their containing scope during the compilation phase,before code exection.
+console.log(getNews())
+function getNews() {
+    return "Good news!"
+}
+
+
+// Arrow Functions
+const getSpendAlert = amount =>  `Warning! You just spent $${amount}` //1 parameter: brackets not needed
+
+console.log(getSpendAlert(150))  // 0 or 2 or more parameters: bracket needed
+const sum = (n1,n2) => {
+    return n1 + n2
+}
+console.log(sum(2,5))
+
+// Return one line of code without curly braces or the return keyword.
+// More complex logic requires the curly braces and the return keyword.
+
+// Default parameter means giving a parameter a default value when a function is called without providing that argument.
+function greet(name = "Guest") {
+    console.log(`Hello, ${name}!`);
+}
+
+greet("Akash");
+greet();
+
+// Rest parameter use to store many arguments in an array
+function add(...numbers) {
+    console.log(numbers);
+}
+
+add(10, 20, 30, 40);
+
+
+function getLabelsHtml(text,sender,...staffObjects) {
+    console.log(staffObjects)
+    const labelsHtml = staffObjects.map(staffObj => 
+        `<div class="label-card">
+            <p>Dear ${staffObj.name}</p>
+            <p>${text}</p>
+            <p>Best wishes,</p>
+            <p>${sender}</p>
+        </div>`
+    ).join('')
+    return labelsHtml
+}
+
+const text = 'Thank you for all your hard work throughout the year!'
+const sender = 'Tom'
+
+document.getElementById('labels-container').innerHTML = getLabelsHtml(
+    text,
+    sender,
+    {name: 'Sally'},
+    {name: 'Mike'},
+    {name: 'Rob'},
+    {name: 'Harriet'}
+)
+*/
+
+// A callback function is a function that is passed as an argument to another function and is called later by that function.
+function greet(name) {
+    console.log(`Hello, ${name}`);
+}
+
+function processUser(callback) {
+    callback("Akash");
+}
+
+processUser(greet);
+
+
+function notifyUser(notificationFn) {
+    notificationFn()
+}
+const emailNotification = () => console.log('Email sent')
+const smsNotification = () => console.log('SMS sent')
+notifyUser(emailNotification)
+notifyUser(smsNotification)
+
 
 
 

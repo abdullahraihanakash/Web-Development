@@ -984,3 +984,58 @@ background-position:0% 50%;
     border: none;
     border-radius: 5px;
 }
+#RI-H {
+    text-align: center;
+    font-family: 'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+.team-img {
+    margin: 10px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 25px;
+}
+#Render-image-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.thanks-label {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+        padding: 30px;
+        box-shadow: 5px 5px 20px #000F08;
+    }
+ 
+.staff {
+        text-align: center;
+        color: #333;
+    }
+ 
+    #labels-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+ 
+    .label-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+    }
+ 
+    .label-card p {
+        margin: 8px 0;
+        color: #444;
+    }
+ 
+    .label-card p:first-child {
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 18px;
+    }

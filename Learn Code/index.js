@@ -655,6 +655,68 @@ const smsNotification = () => console.log('SMS sent')
 notifyUser(emailNotification)
 notifyUser(smsNotification)
 
+try {
+    const response = await fetch('https://api.example.comdata');
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    console.log(data);
+}
+catch (error) {
+    console.error('Error fetching data:', error);
+}
+finally {
+    console.log('Fetch attempt finished.');
+}
+
+try {
+    const response = await fetch('https://api.scrimba.com/jsonp;aceholder/posts');
+    if (!response.ok) {
+        throw new Error('There was a problem with API request');
+    }
+    const data = await response.json();
+    console.log(data);
+}
+catch (error) {
+    console.error(error);
+}
+
+try {
+    const response = await fetch('https://apis.scrimba.com/jsonplaceholder/posts',
+    //const response = await fetch('https://api.scrimba.com/jsonplaceholder/posts',
+        {
+            method: 'POST',
+            body: JSON.stringify({
+                title: 'Holiday Nightmares',
+                body: 'When I was kidnapped in Scotland......',
+                userId: 100
+            }),
+            headers: {      //headers are used to provide additional information about the request or response. They can include metadata, authentication tokens, content type, and more.
+                'Content-type': 'application/json'
+            }
+        })
+    if (!response.ok) {
+        throw new Error('There was a problem with API request');
+    }
+    const data = await response.json();
+    console.log(data);
+}
+catch (error) {
+    console.error(error);
+}
+
+//The promise constructor
+const promise = new Promise((resolve, reject) => {
+    const success = Math.random() > 0.5
+    if (success) {
+        resolve('Operation successful')
+    } else {
+        reject('Operation failed')
+    }
+})
+
+//promise.then(response => console.log(response))
 
 
 

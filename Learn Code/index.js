@@ -718,6 +718,36 @@ const promise = new Promise((resolve, reject) => {
 
 //promise.then(response => console.log(response))
 
+try {
+    const response = await promise
+    console.log(response)
+} catch (error) {
+    console.error(error)
+}
+
+function perLoadImg(url) {
+    return new Promise((resolve,reject) => {
+        const img = new Image()
+        img.src = url
+        img.alt = 'A beautiful image'
+        img.addEventListener('load',() => {
+            resolve(img)
+        })
+        img.addEventListener('error',() => {
+            reject(new Error('Image failed to load'))
+        })
+    }
+)
+}
+
+try {
+    const results = await perLoadImg('https://images.unsplash.com/photo-1682685794700-1f3c7e5d8b9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
+    console.log(results)
+    document.getElementById('image-container').appendChild(results)    
+}
+catch (error) {
+    console.error(error)
+}
 
 
 

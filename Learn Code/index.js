@@ -749,6 +749,65 @@ catch (error) {
     console.error(error)
 }
 
+//using promises to escape callback hell
+function uploadFile() {
+    return new Promise((resolve,reject) => {
+        console.log('Step 1: Uploading file...')
+        setTimeout(() => {
+            resolve()        
+        }, 1000)
+    })
+}
+
+function processFile() {
+    return new Promise((resolve,reject) => {
+        console.log('Step 2: Processing file...')
+        setTimeout(() => {
+            resolve()
+        }, 1000)
+    })
+}
+
+function notifyUser() {
+    return new Promise((resolve,reject) => {
+        console.log('Step 3: Notifying user...')
+        setTimeout(() => {
+            resolve()
+        }, 1000)
+    })
+}   
+
+try {
+    await uploadFile()
+    await processFile()
+    await notifyUser()
+    console.log('All steps completed successfully!')
+} catch (error) {
+    console.error('An error occurred:', error)
+}
+
+//Promise.all() method takes an array of promises and returns a new promise that resolves when all the promises in the array have resolved, or rejects if any of the promises reject.
+function createPromise() {
+    return new Promise((resolve,reject) => {
+        const success = Math.random() > 0.5
+        if (success) {
+            resolve('Promise resolved successfully!')
+        } else {
+            reject('Promise rejected')
+        }
+    })
+}
+
+try {
+    const promises1 = createPromise()
+    const promises2 = createPromise()
+    const promises3 = createPromise()
+    const results = await Promise.all([promises1,promises2,promises3])
+    console.log(results)
+} catch (error) {
+    console.error(error)
+}
+*/
 
 
 

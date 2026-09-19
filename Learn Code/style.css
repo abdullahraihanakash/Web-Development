@@ -1039,3 +1039,74 @@ background-position:0% 50%;
         color: #2c3e50;
         font-size: 18px;
     }
+
+.image-preload {
+     margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #16aab4;
+    color: #ffffff;
+    min-height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.image-preload h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+#status {
+    font-size: 1rem;
+    color: #a1a1aa;
+    margin: 0;
+}
+
+#upload-container {
+    display: flex;
+    justify-content: center;
+}
+
+#submit-imgs {
+    background-color: #4f46e5;
+    color: #ffffff;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#submit-imgs:hover {
+    background-color: #4338ca;
+}
+
+#submit-imgs:active {
+    transform: scale(0.97);
+}
+
+#image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#image-container img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(8, 162, 201, 0.3);
+    flex-shrink: 0;
+}

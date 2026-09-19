@@ -808,6 +808,43 @@ try {
     console.error(error)
 }
 */
+function getImagePromise(url) {
+    return new Promise((resolve,reject) => {
+        const img = new Image()
+        img.src = url
+        img.alt = 'A beautiful image'
+        img.addEventListener('load', () => {
+            resolve(img)
+        })
+        img.addEventListener('error', () => {
+            reject(new Error('Image failed to load'))
+        })
+    })
+}
+
+const images = [
+    'https://scrimba.com/links/advancedjs-resources-images-scenic1',
+    'https://scrimba.com/links/advancedjs-resources-images-scenic2',
+    'https://scrimba.com/links/advancedjs-resources-images-scenic3'
+]
+
+async function preloadImages() {
+    const imgContainer = document.getElementById('image-container')
+    const uploadContainer = document.getElementById('upload-container')
+    const promises = images.map(url => getImagePromise(url))
+    try {
+        const results = await Promise.all(promises)
+        console.log("All images loaded successfully!")
+    uploadContainer.style.display = 'none'
+    results.forEach(img => {
+        imgContainer.appendChild(img)
+    })
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+document.getElementById('submit-imgs').addEventListener('click', () => preloadImages(images)) 
 
 
 

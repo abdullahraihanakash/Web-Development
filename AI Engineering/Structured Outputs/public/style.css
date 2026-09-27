@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    width: min(90%, 700px);
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 14px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.result h2 {
+    margin-top: 0;
+}
+
+.result li {
+    margin-bottom: 8px;
+}

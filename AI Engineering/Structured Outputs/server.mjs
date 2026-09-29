@@ -24,7 +24,7 @@ app.post("/learn", async (req, res) => {
 
     try {
         const response = await client.responses.create({
-            model: "gpt-5.6-luna",
+            model: "gpt-6-astra",
             input: `Explain ${topic} for a beginner.`,
 
             text: {

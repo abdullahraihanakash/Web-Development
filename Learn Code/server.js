@@ -87,8 +87,20 @@ server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 //npm start ->http://localhost:8000/api/continent/africa
 
 //Aside: Query Parameters
+const server = http.createServer(async (req, res) => {
 
-//npm start -> http://localhost:8000/api/
+    const urlobj = new URL(req.url, `http://${req.headers.host}`);
+    //console.log(req.headers);
+    console.log(urlobj)
+    //console.log(req.url);
+    const queryObj = Object.fromEntries(urlobj.searchParams)
+
+})
+
+server.listen(8000, () => console.log('Server running on port 8000'));
+
+//npm start -> http://localhost:8000/api?name=tom&country=uk
+
 
 
 

@@ -846,6 +846,25 @@ async function preloadImages() {
 
 document.getElementById('submit-imgs').addEventListener('click', () => preloadImages(images)) 
 
+//map()
+const numbers = [1, 2, 3, 4];
 
+const result = numbers.map(function(number) {
+    return number * 2;
+});
+
+console.log(result);
+//Output:[2, 4, 6, 8]
+
+const users = [
+    { name: "Rahim", age: 20 },
+    { name: "Karim", age: 25 },
+    { name: "Hasan", age: 30 }
+];
+
+const names = users.map(user => user.name);
+
+console.log(names);
+//Output:["Rahim", "Karim", "Hasan"]
 
 

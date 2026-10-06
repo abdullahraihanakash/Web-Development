@@ -867,4 +867,13 @@ const names = users.map(user => user.name);
 console.log(names);
 //Output:["Rahim", "Karim", "Hasan"]
 
+//filter()
+const numbers = [10, 15, 20, 25, 30];
+
+const result = numbers.filter(function(number) {
+    return number >= 20;
+});
+
+console.log(result);
+//Output: [20, 25, 30]
 

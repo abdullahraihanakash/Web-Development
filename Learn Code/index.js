@@ -877,3 +877,17 @@ const result = numbers.filter(function(number) {
 console.log(result);
 //Output: [20, 25, 30]
 
+const users = [
+    { name: "Rahim", age: 17 },
+    { name: "Karim", age: 22 },
+    { name: "Hasan", age: 30 }
+];
+
+const adults = users.filter(user => user.age >= 18);
+
+console.log(adults);
+//Output:
+[
+    { name: "Karim", age: 22 },
+    { name: "Hasan", age: 30 }
+]

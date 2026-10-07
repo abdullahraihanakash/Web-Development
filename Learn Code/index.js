@@ -584,8 +584,9 @@ function getNews() {
 // Arrow Functions
 const getSpendAlert = amount =>  `Warning! You just spent $${amount}` //1 parameter: brackets not needed
 
-console.log(getSpendAlert(150))  // 0 or 2 or more parameters: bracket needed
-const sum = (n1,n2) => {
+console.log(getSpendAlert(150))
+                        
+const sum = (n1,n2) => {      // 0 or 2 or more parameters: bracket needed
     return n1 + n2
 }
 console.log(sum(2,5))

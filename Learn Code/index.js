@@ -900,3 +900,17 @@ const total = numbers.reduce(function(sum, number) {
 }, 0);
 
 console.log(total);
+//Output: 100
+
+const products = [
+    { name: "Laptop", price: 800 },
+    { name: "Mouse", price: 20 },
+    { name: "Keyboard", price: 50 }
+];
+
+const total = products.reduce((sum, product) => {
+    return sum + product.price;
+}, 0);
+
+console.log(total);
+//Output: 870

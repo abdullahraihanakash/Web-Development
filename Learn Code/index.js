@@ -547,6 +547,25 @@ import {interplanetaryDestinationsArr} from './data.js' // import information fr
 import getMatchingTripsArr from './searchFunction.js'
 console.log(getMatchingTripsArr(interplanetaryDestinationsArr,'exotic'))
 
+Named আর Default-এর পার্থক্য
+Named
+Export:
+export const data = [...]
+
+Import:
+import {data} from './data.js'
+
+এখানে {} লাগে।
+Default
+Export:
+export default function getMatchingTripsArr() {
+}
+
+Import:
+import getMatchingTripsArr from './searchFunction.js'
+
+এখানে {} লাগে না।
+
 // Constructors : Two types of constructor 1.Inbuilt, 2.Custom. 1.Inbuilt: Provide objects in various predetermind formats,like Date objects and Error objects,and Objects for each data type.
 // 2.Constructors we design ourselves to produce objects for our own specific purpouses.
 const dateSnapshot = new Date()

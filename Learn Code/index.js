@@ -914,3 +914,29 @@ const total = products.reduce((sum, product) => {
 
 console.log(total);
 //Output: 870
+
+//async — asynchronous function
+
+ধরো তুমি server থেকে data আনবে।
+
+async function getData() {
+    // asynchronous work
+}
+
+async দিলে function একটি Promise return করে।
+
+Example:
+
+async function hello() {
+    return "Hello";
+}
+
+console.log(hello());
+
+এটা সরাসরি: Hello দেবে না। কারণ async function একটি Promise return করে।
+তাই:
+hello().then(result => {
+    console.log(result);
+});
+Output: Hello
+

@@ -915,8 +915,8 @@ const total = products.reduce((sum, product) => {
 console.log(total);
 //Output: 870
 
-async — asynchronous function
-ধরো তুমি server থেকে data আনবে।
+//async — asynchronous function
+
 async function getData() {
     // asynchronous work
 }
@@ -932,4 +932,35 @@ console.log(hello());
 hello().then(result => {
     console.log(result);
 });
-Output: Hello
+//Output: Hello
+
+///await — Promise-এর result-এর জন্য অপেক্ষা
+//await সাধারণত async function-এর ভিতরে ব্যবহার করা হয়।
+async function getData() {
+    const response = await fetch("https://example.com/data");
+
+    console.log(response);
+}
+
+সহজ ভাষায়: await বলছে: "এই Promise-এর result আসা পর্যন্ত এই async function-এর পরের কাজটা অপেক্ষা করুক।"
+
+Example:
+async function getUser() {
+    const response = await fetch("https://api.example.com/user");
+    const data = await response.json();
+    console.log(data);
+}
+
+এখানে:
+const response = await fetch(...);
+
+প্রথমে server response-এর জন্য অপেক্ষা করবে।
+তারপর:
+const data = await response.json();
+
+JSON data তৈরি হওয়ার জন্য অপেক্ষা করবে।
+তারপর:
+console.log(data);
+চলবে।
+
+

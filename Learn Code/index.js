@@ -978,6 +978,31 @@ async function getData() {
     }
 }
 
+//Example:
+async function getUsers() {
+
+    const response = await fetch("https://example.com/users");
+
+    const users = await response.json();
+
+    const adults = users.filter(user => user.age >= 18);
+
+    const names = adults.map(user => user.name);
+
+    const totalAge = adults.reduce((sum, user) => {
+        return sum + user.age;
+    }, 0);
+
+    console.log(names);
+    console.log(totalAge);
+}
+
+
+
+
+
+
+
 
 
 

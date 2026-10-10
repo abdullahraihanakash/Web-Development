@@ -963,4 +963,24 @@ JSON data তৈরি হওয়ার জন্য অপেক্ষা কর
 console.log(data);
 চলবে।
 
+//Example:
+async function getData() {
+
+    try {
+        const response = await fetch(url);
+
+        const data = await response.json();
+
+        console.log(data);
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+
+
+
+
 

@@ -997,6 +997,21 @@ async function getUsers() {
     console.log(totalAge);
 }
 
+await fetch()
+       ↓
+server থেকে data আনা
+
+filter()
+       ↓
+শুধু adult users নেওয়া
+
+map()
+       ↓
+তাদের নাম নেওয়া
+
+reduce()
+       ↓
+তাদের বয়সের total বের করা
 
 
 

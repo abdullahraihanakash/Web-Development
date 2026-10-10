@@ -1013,6 +1013,11 @@ reduce()
        ↓
 তাদের বয়সের total বের করা
 
+map     → Transform
+filter  → Select
+reduce  → Calculate / Combine
+async   → Asynchronous function
+await   → Wait for Promise result
 
 
 

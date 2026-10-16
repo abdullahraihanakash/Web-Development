@@ -706,6 +706,38 @@ catch (error) {
     console.error(error);
 }
 
+// Complete Example
+async function createPost() {
+    try {
+        const response = await fetch(
+            'https://apis.scrimba.com/jsonplaceholder/posts',
+            {
+                method: 'POST',
+                body: JSON.stringify({
+                    title: 'Holiday Nightmares',
+                    body: 'When I was kidnapped in Scotland......',
+                    userId: 100
+                }),
+                headers: {
+                    'Content-type': 'application/json'
+                }
+            }
+        );
+
+        if (!response.ok) {
+            throw new Error('There was a problem with API request');
+        }
+
+        const data = await response.json();
+        console.log(data);
+    }
+    catch (error) {
+        console.error(error);
+    }
+}
+
+createPost();
+
 //The promise constructor
 const promise = new Promise((resolve, reject) => {
     const success = Math.random() > 0.5

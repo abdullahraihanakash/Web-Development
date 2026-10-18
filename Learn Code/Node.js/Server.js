@@ -50,3 +50,38 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 // npm start -> http://localhost:8000/api
+
+//Add path parameters
+const server = http.createServer(async (req, res) => {
+    const destinations = await getDataFromDB();
+    if (req.url === '/api' && req.method === 'GET') {
+        res.setHeader('Content-Type', 'application/json')
+        res.statusCode = 200;
+        res.end(JSON.stringify(destinations));
+        }
+
+    else if (req.url.startsWith('/api/continent/') && req.method === 'GET') {
+        const continent = req.url.split('/').pop(); // Get the last part of the URL as the continent name
+        console.log(`Continent requested: ${continent}`);
+
+        const filteredData = destinations.filter((destination) => {
+            return destination.continent.toLowerCase() === continent.toLowerCase();
+        });
+            res.setHeader('Content-Type', 'application/json');
+            res.statusCode = 200;
+            res.end(JSON.stringify(filteredData));
+    }
+
+    else {
+        res.setHeader('Content-Type', 'application/json');
+        res.statusCode = 404;
+        res.end(JSON.stringify({ 
+            error: 'Not found' ,
+            message: 'The requested resource was not found on this server.'
+        }));
+    };
+});
+
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+ */ 
+//npm start ->http://localhost:8000/api/continent/africa

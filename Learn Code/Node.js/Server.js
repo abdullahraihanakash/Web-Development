@@ -30,3 +30,23 @@ const server = http.createServer( (req, res) => {  //req = request, res = respon
 server.listen(PORT,() => console.log(`Server is running on port ${PORT}`));
 
 // npm start -> http://localhost:8000
+
+import { getDataFromDB } from './ServerData.js';
+
+//Route Not Found
+
+const server = http.createServer(async (req, res) => {
+    if (req.url === '/api' && req.method === 'GET') {
+        const data = await getDataFromDB();          // ServerData.js theke data ana
+        res.setHeader('Content-Type', 'application/json');
+        res.statusCode = 200;
+        res.end(JSON.stringify(data));               // JSON string kore pathano
+    } else {
+        res.setHeader('Content-Type', 'application/json');
+        res.statusCode = 404;
+        res.end(JSON.stringify({ error: 'Not found' }));
+    }
+});
+
+server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+// npm start -> http://localhost:8000/api

@@ -1,0 +1,15 @@
+{
+  "name": "uptime-monitoring-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "1.Start the API server\r 2.Create,Edit,Delete user\r 3.Token based authentication\r 4.Logout Mechanism\r 5.Set links and up/down\r 6.Edit/Delete links & rate limit\r 7.Check up/down time",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=staging nodemon index",
+    "production": "NODE_ENV=production nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Abdulla Raihan Akash",
+  "license": "ISC"
+}

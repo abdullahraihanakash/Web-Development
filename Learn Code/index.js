@@ -929,7 +929,7 @@ const numbers = [10, 20, 30, 40];
 
 const total = numbers.reduce(function(sum, number) {
     return sum + number;
-}, 0);
+}, 0);      // 0 দিয়ে বোঝানো হয়েছে, শুরুতে sum-এর মান হবে শূন্য।
 
 console.log(total);
 //Output: 100

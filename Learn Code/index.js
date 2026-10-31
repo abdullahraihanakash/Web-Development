@@ -942,7 +942,7 @@ const products = [
 
 const total = products.reduce((sum, product) => {
     return sum + product.price;
-}, 0);
+}, 0);      // JavaScript array-এর প্রথম element-কে initial accumulator হিসেবে ধরে নেয় এর ফলে object-এর সঙ্গে number যোগ করার চেষ্টা হবে, যা প্রত্যাশিত ফল দেবে না।
 
 console.log(total);
 //Output: 870

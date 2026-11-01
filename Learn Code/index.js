@@ -927,7 +927,8 @@ console.log(adults);
 //reduce()
 const numbers = [10, 20, 30, 40];
 
-const total = numbers.reduce(function(sum, number) {
+const total = numbers.reduce(function(sum, number) {      //JavaScript-এর reduce() হলো একটি array method, 
+                                                             যা array-এর সব element-এর উপর কাজ করে একটি single value তৈরি করে।
     return sum + number;
 }, 0);
 

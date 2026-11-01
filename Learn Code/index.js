@@ -1051,7 +1051,22 @@ reduce  → Calculate / Combine
 async   → Asynchronous function
 await   → Wait for Promise result
 
+// .this & .then
+//JavaScript-এ this একটি keyword, আর .then() হলো Promise-এর method।
+JavaScript-এ this ব্যবহার করা হয় বর্তমান execution context-এ কোন object-কে নির্দেশ করা হচ্ছে, তা বোঝাতে।
+সহজ ভাষায়, this সাধারণত বোঝায়: আমি বর্তমানে কোন object-এর মধ্যে কাজ করছি?
+// Example:
+const user = {
+    name: "Rahim",
+    age: 25,
 
+    sayHello: function() {
+        console.log("Hello, " + this.name);
+    }
+};
+user.sayHello();
+
+//Output: Hello, Rahim
 
 
 

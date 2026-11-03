@@ -6,8 +6,6 @@ const ulEl = document.getElementById("ul-el");
 const deleteBtn = document.getElementById("delete-btn")
 const tabBtn = document.getElementById("tab-btn")
 
-
-
 //localStorage.clear() // clear local storage
 let lead_From_Loca_Storage = JSON.parse(localStorage.getItem("myLeads"))
 //console.log(lead_From_Loca_Storage)
@@ -35,7 +33,6 @@ if(lead_From_Loca_Storage) {
     ulEl.innerHTML = listItems // adding the value of the input field to the ul element and use HTML tags in JavaScript 
 
 }
-
 
 // Without use of loop
 function render(leads) {    // function to render the leads in the ul element
@@ -105,22 +102,7 @@ tabBtn.addEventListener("click", function() {
                 "myLeads",
                 JSON.stringify(myLeads)
             );
-
             render(myLeads);
         }
     );
-
 });
-
-    
-
-
-
-
-
-
-
-
-
-
-

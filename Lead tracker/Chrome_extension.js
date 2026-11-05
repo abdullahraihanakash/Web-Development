@@ -7,7 +7,7 @@ const deleteBtn = document.getElementById("delete-btn")
 const tabBtn = document.getElementById("tab-btn")
 
 //localStorage.clear() // clear local storage
-let lead_From_Loca_Storage = JSON.parse(localStorage.getItem("myLeads"))
+let lead_From_Loca_Storage = JSON.parse(localStorage.getItem("myLeads"))    // JSON String → JavaScript Object
 //console.log(lead_From_Loca_Storage)
 
 if(lead_From_Loca_Storage) {

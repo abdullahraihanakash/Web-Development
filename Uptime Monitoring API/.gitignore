@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Dependencies
+node_modules/
+
+# Debug logs
+*.log
+
+# Runtime data
+data/
+
+# Screenshots
+Photos/

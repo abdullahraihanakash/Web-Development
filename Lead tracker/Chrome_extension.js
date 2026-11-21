@@ -75,7 +75,8 @@ inputBtn.addEventListener("click", function() {
 
 deleteBtn.addEventListener("dblclick",function() {  // "dblclick" use to make btn double clickable
     //console.log("double clicked")
-    localStorage.clear()
+    //localStorage.clear()
+    localStorage.removeItem("myLeads") //More safe
     myLeads = []
     render(myLeads)
 })

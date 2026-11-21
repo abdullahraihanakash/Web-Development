@@ -123,7 +123,7 @@ deleteBtn.addEventListener("dblclick", function() {
 
 ## 🚧 Development Challenges and Solutions
 
-These are common challenges for this type of project. Keep the descriptions that match the problems you actually encountered and the solutions implemented in your code.
+These are common challenges for this type of project.
 
 ### 1. Saving Data in the Browser
 

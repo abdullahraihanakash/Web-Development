@@ -21,6 +21,10 @@ app.post("/ask-ai", async (req, res) => {
 
     console.log("User:", question);
 
+     res.json({
+        message: "Question received successfully!",
+        question: question
+    });
 });
 
 
